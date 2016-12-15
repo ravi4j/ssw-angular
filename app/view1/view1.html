@@ -1,0 +1,161 @@
+
+<p>Demo of Drill Down panel</p>
+
+<div id="view1" ng-controller="View1Ctrl">
+    <a ng-click="toggleBillDetailDrillDown()">
+             <span ng-show="!showBillDetailDrillDown">
+                    <img class="img" src="../assets/images/arrow_right.png" />
+                 </span>
+             <span  ng-show="showBillDetailDrillDown">
+                 <img class="img" src="../assets/images/arrow_down.png" />
+             </span>
+        <span>Invoice Drill Down Demo</span>
+    </a>
+    <span> | </span>
+    <a ng-click="toggleCreditDetailDrillDown()">
+             <span ng-show="!showCreditDetailDrillDown">npm
+                    <img style="vertical-align: sub" src="../assets/images/Arrow_Static.png" />
+                 </span>
+             <span ng-show="showCreditDetailDrillDown">
+                 <img style="vertical-align: sub" src="../assets/images/Arrow_Selected.png" />
+             </span>
+        <span>Credit/Debit Drill Down Demo</span>
+    </a>
+
+    <div class="rowDetail" ng-show="showBillDetailDrillDown">
+        <div class="service header">
+            <span>Services</span>
+        </div>
+        <div class="discount header">
+            <span>Amount</span>
+        </div>
+        <div class="total header">
+            <span>Total</span>
+        </div>
+        <ul>
+            <li>
+                <div class="service">
+                    <span>INTERACTIVE BUNDLE - TV , PHONE , INTERNET etc...</span>
+                </div>
+                <div class="discount">
+                    <span>-$1.00</span>
+                </div>
+                <div class="total">
+                    <span>$26.00</span>
+                </div>
+            </li>
+            <li>
+                <div class="service">
+                    <span>Internet Service Plan (04/20/16 - 05/15/16)</span>
+                </div>
+                <div class="discount">
+                    <span>-$1.00</span>
+                </div>
+                <div class="total">
+                    <span>$5.00</span>
+                </div>
+            </li>
+            <li>
+                <div class="service">
+                    <span>&nbsp;</span>
+                </div>
+                <div class="discount">
+                    <div>Total</div>
+                    <div>
+                        <div>Discounts</div>
+                        <div>Taxes</div>
+                    </div>
+                    <div><span>Invoices</span></div>
+                </div>
+                <div class="total">
+                    <div><span>$30.00</span></div>
+                    <div>
+                        <div>$10.00</div>
+                        <div>$10.00</div>
+                    </div>
+                    <div><span>$30.00</span></div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="rowDetail" ng-show="showCreditDetailDrillDown">
+        <div class="invoice-date header">
+            <span>Invoice Date</span>
+        </div>
+        <div class="invoice-no header">
+            <span>Invoice #</span>
+        </div>
+        <div class="invoice-type header">
+            <span>Description</span>
+        </div>
+        <div class="invoice-amt header">
+            <span>Amount</span>
+        </div>
+        <div class="invoice-apply header">
+            <span>Applied</span>
+        </div>
+        <ul>
+            <li>
+                <div class="invoice-date">
+                    <span>04/20/16</span>
+                </div>
+                <div class="invoice-no">
+                    <span>123456789</span>
+                </div>
+
+                <div class="invoice-type">
+                    <span>INTERACTIVE BUNDLE - RICE, COOKIES, DINNER ITEMS , PARTY,
+                        EVENT HISTORY (04/20/16 - 05/15/16)</span>
+                </div>
+                <div class="invoice-amt">
+                    <span>-$1.00</span>
+                </div>
+                <div class="invoice-apply">
+                    <span>$26.00</span>
+                </div>
+            </li>
+            <li>
+                <div class="invoice-date">
+                    <span>04/20/16</span>
+                </div>
+                <div class="invoice-no">
+                    <span>123456789</span>
+                </div>
+
+                <div class="invoice-type">
+                    <span>PARTY ITEMS,
+                        EVENT HISTORY (04/20/16 - 05/15/16)</span>
+                </div>
+                <div class="invoice-amt">
+                    <span>-$1.00</span>
+                </div>
+                <div class="invoice-apply">
+                    <span>$26.00</span>
+                </div>
+            </li>
+            <li>
+                <div class="service">
+                    <span>&nbsp;</span>
+                </div>
+                <div class="discount">
+                    <div>Total</div>
+                    <div>
+                        <div>Discounts</div>
+                        <div>Taxes</div>
+                    </div>
+                    <div><span>Credits</span></div>
+                </div>
+                <div class="total">
+                    <div><span>$30.00</span></div>
+                    <div>
+                        <div>$10.00</div>
+                        <div>$10.00</div>
+                    </div>
+                    <div><span>$30.00</span></div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+

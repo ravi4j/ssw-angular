@@ -1,0 +1,35 @@
+.accordion_menu {
+  width: 60%; }
+  .accordion_menu div.accordion {
+    background-color: white;
+    color: #4D4D4D;
+    cursor: pointer;
+    padding: 18px;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 16px;
+    font-weight: 600;
+    border: 1px solid #878787; }
+    .accordion_menu div.accordion.active {
+      border-bottom: 1px solid; }
+    .accordion_menu div.accordion:hover:after {
+      content: url("../../assets/images/accordion/Arrow_Hover.png");
+      float: right;
+      margin-top: -5px; }
+    .accordion_menu div.accordion.active:after {
+      content: url("../../assets/images/accordion/Arrow_Expanded.png"); }
+  .accordion_menu div.accordion:after {
+    content: url("../../assets/images/accordion/Arrow_Static.png");
+    float: right;
+    margin-top: -5px; }
+  .accordion_menu .panel {
+    padding: 0 18px;
+    background-color: #f1f1f1;
+    border: 1px solid #878787; }
+    .accordion_menu .panel.ng-show {
+      display: block; }
+    .accordion_menu .panel.ng-hide {
+      display: none; }
+
+/*# sourceMappingURL=view2.css.map */

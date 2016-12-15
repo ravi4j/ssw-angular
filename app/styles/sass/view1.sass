@@ -1,0 +1,85 @@
+// SASS Variables
+$csrLightGray: #C1C1C1
+$csrDarkGray: #878787
+$serviceBkOdd: rgba(135, 135, 135, 1)
+$serviceBkEven: rgba(225, 225, 225, 1)
+
+#view1
+  .img
+    width : 25px
+    height: 25px
+  .service
+    width: calc(100% - 188px)
+    text-align: left
+    > span
+      margin-left: 10px
+  .discount
+    width: 100px
+    text-align: center
+  .total
+    width: 85px
+    text-align: center
+  .invoice-date
+    width: 100px
+    text-align: center
+  .invoice-no
+    width: 100px
+    text-align: center
+  .invoice-type
+    width: calc(100% - 390px)
+  .invoice-amt
+    width: 100px
+    text-align: center
+  .invoice-apply
+    width: 85px
+    text-align: center
+  .rowDetail
+    width: 100%
+    padding: 0px
+    > div
+      float: left
+      border-right: 1px solid $csrDarkGray
+      &:last-child
+        border: none
+      &.header
+        height: 30px
+        padding-top: 6px
+        background-color: #333333
+        color: #ffffff
+        font-weight: 400
+        font-size: 13px
+    > ul
+      clear: both
+      list-style-type: none
+      padding: 0px
+      li
+        display: flex
+        > div
+          float: left
+          padding-top: 6px
+          font-weight: 400
+          font-size: 13px
+          &:last-child
+            border: none
+      li:nth-child(odd)
+        background-color: $serviceBkOdd
+        > div
+          border-right: 1px solid #fff
+          color: #ffffff
+          &:last-child
+            border: none
+          > div
+            border-bottom: 1px solid #fff
+            &:last-child
+              border-bottom: none
+      li:nth-child(even)
+        background-color: $serviceBkEven
+        > div
+          border-right: 1px solid $csrDarkGray
+          color: #878787
+          &:last-child
+            border: none
+      li:last-child
+        > div
+          &:first-child
+            border-right: none

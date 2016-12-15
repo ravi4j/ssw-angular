@@ -1,0 +1,18 @@
+<p> Maze Demo</p>
+<div ng-controller="View3Ctrl">
+    <button ng-click="readInput()">Load Maze</button>
+    <div>
+        <div ng-show="show">
+          <span>Maze of size {{n}} X {{n}}</span>
+        </div>
+        <table>
+            <tr ng-repeat="row in maze track by $index">
+                <td ng-repeat="cell in row track by $index">
+                   <img src="../assets/images/rectangle-blue.png" ng-if="cell == '.'"/>
+                   <img src="../assets/images/rectangle-black.png" ng-if="cell == 'X'"/>
+                </td>
+            </tr>
+        </table>
+      </div>
+
+</div>
